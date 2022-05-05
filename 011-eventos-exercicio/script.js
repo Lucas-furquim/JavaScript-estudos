@@ -4,13 +4,20 @@
 // o comportamento padrão desses links
 
 const links = document.querySelectorAll('a[href^="#"]');
+const lista = [];
+lista.push(links);
 
-function adiciona(e) {
-  e.preventDefault();
-  const tem = e.currentTarget.classList;
-  return tem.toggle("ativo");
-}
+// lista.forEach((item) => {
+//   if (links.classList.contains("ativo")) {
+//   }
+// });
 
-links.forEach(function (item) {
-  item.addEventListener("click", adiciona);
-});
+// function adiciona(e) {
+//   e.preventDefault();
+//   const tem = e.currentTarget.classList;
+//   return tem.toggle("ativo");
+// }
+
+// links.forEach(function (item) {
+//   // console.log(clases);
+// });
